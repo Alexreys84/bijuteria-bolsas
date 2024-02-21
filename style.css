@@ -52,18 +52,17 @@ body{
 
 
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>> */
-      max-width: 720px;
+
     /*FOOTER*/
     footer{
     background-color: rgb(212, 161, 33);
     color: var(--douradoLayout);
-    .fex{
         text-align: center;
     }
-}
+
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-    .container{
+    .Container{
        max-width: 540px;
       
     }
@@ -72,7 +71,7 @@ body{
 
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-    .container{
+    .Container{
         max-width: 960px;
 
  
