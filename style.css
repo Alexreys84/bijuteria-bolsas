@@ -245,13 +245,13 @@ footer {
 
     /* Cabeçalho */
     header {
-        max-width: 64px;
+        max-width: 1140px;
         height: 125px;
     }
 
     #logo img {
-        width: 64px;
-        height: 64px;
+        width: 424px;
+        height: 97.4px;
     }
 
     label {
@@ -280,6 +280,7 @@ footer {
     }
 
 }
+
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
