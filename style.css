@@ -1,8 +1,9 @@
 /**
-folha de estilo Moda Feminina
-@author Alex Reis
-*/ 
-/* importar fonts */
+ Folha de estilo do site Moda Feminina
+ @author Alex Reis
+ */
+
+/* google fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 
@@ -11,97 +12,285 @@ folha de estilo Moda Feminina
 
 
 
-/* variaveis globais*/
-:root{
-    --douradoLayout: #ffd700;
-    --brancoLayout: #ffffff;
-    --pretoLayout:#000000;
 
+
+/* variáveis globais */
+:root {
+    --cinzaLayout: #3c3c3c;
+    --cinzaTexto: #000000;
+    --brancoLayout: #000000;
+    --backgroundCard: #ffd700;
+    --bordaLayout: #ffff;
+
+    
 }
 
-/* CSS RESET */ 
-*{
+/* CSS RESET */
+* {
     margin: 0;
     padding: 0;
     border: 0;
-
 }
-/*LAYOUT*/
-.HTML{
+
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
+html {
     scroll-behavior: smooth;
-
 }
 
-
-body{
-    font-family: "Bebas Neue" , "Hind Siliguri";
+body {
+    font-family: "Open Sans", sans-serif;
     font-size: 1em;
-
 }
-.CONTAINER{
+
+.Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
-
 }
-.Flex{
-    display: flex;
+
+.Flex,
+.FlexMenu {
+    display: Flex;
+    justify-content: space-between;
+}
+
+.Flex {
     flex-direction: column;
-    
 }
 
+/* cartão */
+.Card {
+    margin-top: 25px;
+    width: 300px;
+    height: 520px;
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
+    text-align: center;
+}
 
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
 
-/* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>> */
+.Card h3 {
+    margin: 15px 30px 0px 30px;
+}
 
-    /*FOOTER*/
-    footer{
-    background-color: rgb(212, 161, 33);
-    color: var(--douradoLayout);
-        text-align: center;
-    }
+.Card p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+    color: var(--cinzaTexto);
+}
 
-/* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
+.Button {
+    text-decoration: none;
+    background-color: var(--vermelhoLayout);
+    color: var(--brancoLayout);
+    padding: 10px 100px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Topo */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Smartphone portrait >>>>>>>>>>>>>>>> */
+
+/* Cabeçalho */
+header {
+    height: 50px;
+}
+
+#logo img {
+    width: 64px;
+    height: 64.88px;
+    margin: 10px 0px 0px 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;    
+    position: fixed;
+    top: 25px;
+    right: 3px;
+    color: rgba(60,60,60, 0.6);
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(60,60,60, 0.95);
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    right: -70%; /*estratégia para recolher o menu*/
+    width: 70%;
+    transition: all 0.5s;
+}
+
+/* ativar o checkbox refernte a ul*/
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--backgroundCard);
+    text-align: right;
+    padding: 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--brancoLayout)
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cinzaLayout);
+    color: var(--brancoLayout);
+    text-align: center;
+}
+
+#social {
+    margin-bottom: 25px;
+}
+
+/* Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-    .Container{
-       max-width: 540px;
-      
+
+    /* Layout */
+    .Container {
+        max-width: 540px;
     }
-    
-}
 
-/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px) {
-    .Container{
-        max-width: 960px;
+    /* Cabeçalho */
+    header {
+        max-width: 540px;
+        margin: 0 auto;
+    }
 
- 
-     }
-
-   
-}
-
-/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px) {
-   
-}
-
-/* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 1200px) {
-    .Flex{
+    .Flex {
         flex-direction: row-reverse;
-        justify-content: center;
-
+        justify-content: space-between;
+        align-items: center;
     }
-   
+
+    #social {
+        margin: 0;
+    }
 }
 
-/* PCs, notebooks ou Tv Full HD + >>>>>>>>>>>> */
-@media (min-width: 1400px) {
-    .container{
-        max-width: 720px;
-      
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
 
- 
-     }
-   
+    /* Layout */
+    .Container {
+        max-width: 720px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 720px;
+        height: 100px;
+    }
+
+    label {
+        font-size: 4em;       
+        top: 25px;
+        right: 5px;      
+    }
+
+    #logo img {
+        width: 64px;
+        height: 64px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
+}
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+    /* Layout */
+    .Container {
+        max-width: 960px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 992px;
+    }
+}
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+
+    /* Layout */
+    .Container {
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 64px;
+        height: 125px;
+    }
+
+    #logo img {
+        width: 64px;
+        height: 64px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--brancoLayout);
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+    nav ul li a {
+        color: var(--cinzaLayout);
+    }
+
+    nav ul li a:hover {
+        color: var(--vermelhoLayout)
+    }
+
+}
+
+/* PCs, notebooks ou Tv Full HD + >>>> */
+@media (min-width: 1400px) {
+
+    /* Cabeçalho */
+    header {
+        height: 150px;
+    }
+
+    #logo img {
+        width: 125px;
+        height: 121.75px;
+    }
 }
