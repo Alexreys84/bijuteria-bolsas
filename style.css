@@ -16,7 +16,7 @@
 
 /* variáveis globais */
 :root {
-    --cinzaLayout: #fff;
+    --cinzaLayout: #3c3c3c;
     --cinzaTexto: #000000;
     --brancoLayout: #000000;
     --backgroundCard: #ffd700;
@@ -121,12 +121,12 @@ label {
     position: fixed;
     top: 25px;
     right: 3px;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(60,60,60, 0.6);
 }
 
 nav ul {
     list-style: none;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(60,60,60, 0.95);
     height: 100vh;
     position: fixed;
     top: 80px;
