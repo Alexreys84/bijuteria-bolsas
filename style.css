@@ -154,7 +154,7 @@ nav ul li a {
 
 /* Rodapé */
 footer {
-    background-color: var(--cinzaLayout);
+    background-color: var(--bordaLayout);
     color: var(--brancoLayout);
     text-align: center;
 }
