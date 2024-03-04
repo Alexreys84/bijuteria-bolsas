@@ -32,7 +32,7 @@
     border: 0;
 }
 
-/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>> LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
 html {
     scroll-behavior: smooth;
 }
@@ -99,7 +99,7 @@ body {
     bottom: 10px;
 }
 
-/* Smartphone portrait >>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>Smartphone portrait >>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
 header {
@@ -163,7 +163,7 @@ footer {
     margin-bottom: 25px;
 }
 
-/* Smartphone landscape >>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
     /* Layout */
@@ -188,7 +188,7 @@ footer {
     }
 }
 
-/* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>Tablet portrait >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
 
     /* Layout */
@@ -221,7 +221,7 @@ footer {
     }
 }
 
-/* Tablet landscape >>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>Tablet landscape >>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
 
     /* Layout */
@@ -235,7 +235,7 @@ footer {
     }
 }
 
-/* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+/* >>>>>>>>PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
 
     /* Layout */
