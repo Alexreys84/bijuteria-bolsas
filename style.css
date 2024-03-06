@@ -152,6 +152,32 @@ nav ul li a {
     color: var(--brancoLayout)
 }
 
+/*Banner*/
+
+main{
+    background: url(img/background.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+
+}
+main h1,h2{
+color: var(--brancoLayout);
+
+
+}
+
+main h1{
+font-family: "orbitron", sans-serif;
+
+}
+main h2{
+display: none;
+
+}
+
 /* Rodapé */
 footer {
     background-color: var(--bordaLayout);
@@ -161,6 +187,10 @@ footer {
 
 #social {
     margin-bottom: 25px;
+}
+
+#social img{
+    padding-left: 5px;
 }
 
 /* >>>>>>>>>>>>>>Smartphone landscape >>>>>>>>>>>>>>> */
@@ -278,7 +308,15 @@ footer {
     nav ul li a:hover {
         color: var(--vermelhoLayout)
     }
+            /*Banner*/
 
+main h1{
+    font-size: 3em;
+}
+main h2{
+    font-size: 1.5em;
+    text-shadow: #ffd700 0.5em 1em;
+}
 }
 
 
