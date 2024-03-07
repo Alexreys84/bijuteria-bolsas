@@ -41,7 +41,12 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
 }
-
+/* Topo */
+#topo {
+    position: fixed;
+    right:  10px;
+    bottom: 10px;
+}
 .Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
@@ -92,18 +97,13 @@ body {
     font-weight: 700;
 }
 
-/* Topo */
-#topo {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-}
+
 
 /* >>>>>>>>>>>Smartphone portrait >>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
 header {
-    height: 50px;
+    height: 80px;
 }
 
 #logo img {
@@ -155,26 +155,30 @@ nav ul li a {
 /*Banner*/
 
 main{
-    background: url(img/background.jpg);
-    height: 40vh;
+    background: url(img/background1.jpg);
+    height: 35vh;
     background-size: cover;
     background-position: center;
     text-align: center;
+  
 
 
 }
 main h1,h2{
-color: var(--brancoLayout);
+color:#daa520;
+font-size: 1.0em;
+
 
 
 }
 
 main h1{
 font-family: "orbitron", sans-serif;
-
+font-size: 1.0em;
 }
 main h2{
-display: none;
+display: block;
+
 
 }
 
@@ -199,6 +203,7 @@ footer {
     /* Layout */
     .Container {
         max-width: 540px;
+        
     }
 
     /* Cabeçalho */
@@ -218,6 +223,8 @@ footer {
     }
 }
 
+
+
 /* >>>>>>>>>>>>Tablet portrait >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
 
@@ -231,6 +238,7 @@ footer {
         max-width: 720px;
         height: 100px;
     }
+    
 
     label {
         font-size: 4em;       
@@ -315,7 +323,7 @@ main h1{
 }
 main h2{
     font-size: 1.5em;
-    text-shadow: #ffd700 0.5em 1em;
+   
 }
 }
 
