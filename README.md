@@ -2,11 +2,10 @@
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Falexreys84.github.io%2Fbijuteria-bolsas%2F)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Falexreys84.github.io%2Fbijuteria-bolsas%2F)
 # bijuteria-bolsas
-Este repositório hospeda o projeto do site bijiteria-bolsasa.com
-#Autor
+Este repositório hospeda o projeto do site bijiteria-bolsas.com
+# Autor
 Alex dos Reis
-#Links utilizados
-## Links utilizados
+# Links utilizados
 [Google Trends](https://trends.google.com.br/trends/)
 
 [Google Fonts](https://fonts.google.com/)
@@ -20,4 +19,3 @@ Alex dos Reis
 [Optimizilla](https://imagecompressor.com/)
 
 [Pixabay](https://pixabay.com/pt/)
-
