@@ -151,7 +151,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--brancoLayout)
+    color: var(--backgroundCard)
 }
 
 /*Banner*/
@@ -241,24 +241,42 @@ footer {
         max-width: 720px;
         height: 100px;
     }
-    
-
-    label {
-        font-size: 4em;       
-        top: 25px;
-        right: 5px;      
-    }
-
     #logo img {
-        width: 64px;
-        height: 64px;
+        width: 353.34px;
+        height: 81.2px;
         margin: 10px 0px 0px 0px;
     }
-
+/* Menu */
+    label {
+    font-size: 4em;
+    top: 25px;
+    right: 5px;
+}
+ 
     nav ul {
         top: 100px;
         right: -50%;
         width: 50%;
+    }
+     /* Destaque */
+     .Banner {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        color: var(--branco);
+    }
+    #slogan {
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.75em;
+        font-weight: 400;
+    }
+
+    #textoDestaque {
+        font-size: 1em;
+        font-weight: 500;
+        margin-bottom: 10px;
     }
 }
 
@@ -274,6 +292,23 @@ footer {
     header {
         max-width: 992px;
     }
+    
+}
+#destaqueIntro{
+    display: none;
+}
+
+#destaqueIntro img {
+    margin-right: 50px;
+    border-radius: 20px;
+}
+#imagemYoutube {
+    display: inline;
+}
+
+#imagemYoutube img {
+    width: 256px;
+    height: 256px;
 }
 
 /* >>>>>>>>PCs ou notebooks HD >>>>>>>>>>>>>>>> */
@@ -294,7 +329,7 @@ footer {
         width: 424px;
         height: 97.4px;
     }
-
+    /*menu*/
     label {
         display: none;
     }
@@ -314,11 +349,54 @@ footer {
 
     nav ul li a {
         color: var(--cinzaLayout);
+        font-weight: 500;
+    }
+    /* Destacar link ativo do menu */
+    #index span#s1,
+    #sobre span#s2,
+    #projetos span#s3,
+    #apoio span#s4 {
+        display: inline;
+        color: var(--vermelho);
     }
 
-    nav ul li a:hover {
-        color: var(--vermelhoLayout)
+    /* Destaque */
+    #destaque {
+        height: 75vh;
     }
+    #slogan {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    #textoDestaque {
+        font-size: 1.1em;
+    }
+
+    #intro {
+        background-attachment: fixed;
+    }
+    #textoYoutube h2 {
+        font-size: 2.5em;
+     
+ }
+
+    #textoYoutube p {
+        font-size: 1.25em;
+        margin-bottom: 50px;
+    }
+
+    #destacado {
+        font-size: 1.3em;
+        font-weight: 750;
+    }
+
+}
+
+#intro {
+    background-attachment: fixed;
+}
+
             /*Banner*/
 
 main h1{
@@ -328,7 +406,7 @@ main h2{
     font-size: 1.5em;
    
 }
-}
+
 
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
