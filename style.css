@@ -36,34 +36,55 @@
 html {
     scroll-behavior: smooth;
 }
-
+/*Estrutura do site*/
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
-}
-/* Topo */
-#topo {
-    position: fixed;
-    right:  10px;
-    bottom: 10px;
 }
 .Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
 }
 
+
 .Flex,
+.FlexCard,
+.FlexMenu,
+.FlexSection {
+    display: flex;
+}
+.Flex {
+    flex-direction: column;
+}
+
+.FlexCard {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .FlexMenu {
-    display: Flex;
     justify-content: space-between;
 }
 
+.FlexSection {
+    align-items: center;
+}
 .Flex {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
+.FlexCard {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.FlexMenu {
+    justify-content: space-between;
+}
+
+.FlexSection {
+    align-items: center;
+}
 /* cartão */
 .Card {
     margin-top: 25px;
@@ -98,6 +119,31 @@ body {
     font-size: 1.2em;
     font-weight: 700;
 }
+
+
+/* Topo do site*/
+#topo {
+    position: fixed;
+    right:  10px;
+    bottom: 10px;
+}
+.Container {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+
+.Flex,
+.FlexMenu {
+    display: Flex;
+    justify-content: space-between;
+}
+
+.Flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 
 
