@@ -88,8 +88,8 @@ body {
 /* cartão */
 .Card {
     margin-top: 25px;
-    width: 200px;
-    height: 300px;
+    width: 194px;
+    height: 380px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
     border-radius: 10px;
@@ -288,8 +288,8 @@ footer {
         height: 100px;
     }
     #logo img {
-        width: 353.34px;
-        height: 81.2px;
+        width: 80px;
+        height: 80px;
         margin: 10px 0px 0px 0px;
     }
 /* Menu */
@@ -337,7 +337,9 @@ footer {
     /* Cabeçalho */
     header {
         max-width: 992px;
+       
     }
+    
     
 }
 #destaqueIntro{
