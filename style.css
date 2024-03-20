@@ -94,7 +94,7 @@ body {
 /* cartão */
 .Card {
     margin-top: 25px;
-    width: 194px;
+    width: 165px;
     height: 380px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
