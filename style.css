@@ -22,7 +22,7 @@
     --backgroundCard: #ffd700;
     --bordaLayout: #ffff;
 
-    
+
 }
 
 /* CSS RESET */
@@ -36,15 +36,18 @@
 html {
     scroll-behavior: smooth;
 }
+
 /*Estrutura do site*/
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
 }
+
 .Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
 }
+
 .Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
@@ -59,6 +62,7 @@ body {
 .FlexSection {
     display: flex;
 }
+
 .Flex {
     flex-direction: column;
 }
@@ -75,6 +79,7 @@ body {
 .FlexSection {
     align-items: center;
 }
+
 .Flex {
     flex-direction: column;
 }
@@ -91,6 +96,7 @@ body {
 .FlexSection {
     align-items: center;
 }
+
 /* cartão */
 .Card {
     margin-top: 25px;
@@ -126,13 +132,13 @@ body {
     font-weight: 700;
 }
 
-
 /* Topo do site*/
 #topo {
     position: fixed;
-    right:  10px;
+    right: 10px;
     bottom: 10px;
 }
+
 .Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
@@ -149,9 +155,6 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
-
-
 
 /* >>>>>>>>>>>Smartphone portrait >>>>>>>>>>>>>>>> */
 
@@ -171,20 +174,21 @@ header {
 }
 
 label {
-    font-size: 3em;    
+    font-size: 3em;
     position: fixed;
     top: 25px;
     right: 3px;
-    color: rgba(60,60,60, 0.6);
+    color: rgba(60, 60, 60, 0.6);
 }
 
 nav ul {
     list-style: none;
-    background-color: rgba(60,60,60, 0.95);
+    background-color: rgba(60, 60, 60, 0.95);
     height: 100vh;
     position: fixed;
     top: 80px;
-    right: -70%; /*estratégia para recolher o menu*/
+    right: -70%;
+    /*estratégia para recolher o menu*/
     width: 70%;
     transition: all 0.5s;
 }
@@ -198,7 +202,6 @@ nav ul li {
     border-bottom: 0.5px solid var(--backgroundCard);
     text-align: right;
     padding: 15px;
-
 }
 
 nav ul li a {
@@ -207,33 +210,27 @@ nav ul li a {
 }
 
 /*Banner*/
-
-main{
+main {
     background: url(img/background1.jpg);
     height: 35vh;
     background-size: cover;
     background-position: center;
     text-align: center;
-  
-
-
-}
-main h1,h2{
-color:#daa520;
-font-size: 1.0em;
-
-
-
 }
 
-main h1{
-font-family: "orbitron", sans-serif;
-font-size: 1.0em;
+main h1,
+h2 {
+    color: #daa520;
+    font-size: 1.0em;
 }
-main h2{
-display: block;
 
+main h1 {
+    font-family: "orbitron", sans-serif;
+    font-size: 1.0em;
+}
 
+main h2 {
+    display: block;
 }
 
 /* Rodapé */
@@ -243,27 +240,26 @@ footer {
     text-align: center;
 }
 
-
 #social {
     margin-bottom: 25px;
 }
 
-#social img{
+#social img {
     padding-left: 5px;
 }
 
 /*** Página sobre ***/
-#textoSobre p{
+#textoSobre p {
     text-align: left;
 }
 
-#textoSobre h2 {    
+#textoSobre h2 {
     margin: 20px 0px;
     font-size: 1.5em;
     font-weight: 600;
 }
 
-#textoSobre h3 {   
+#textoSobre h3 {
     margin: 20px 0px;
     font-size: 1.2em;
     font-weight: 500;
@@ -274,37 +270,33 @@ footer {
 }
 
 #textoSobre h4 {
-    margin-top: 15px;    
+    margin-top: 15px;
     font-weight: 400;
     font-size: 1em;
 }
+
 /* >>>>>>>>>>>>>>Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
     /* Layout */
-    .Container {
+ .Container {
         max-width: 540px;
-        
-    }
 
+    }
     /* Cabeçalho */
     header {
         max-width: 540px;
         margin: 0 auto;
     }
-
     .Flex {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
-
     #social {
         margin: 0;
     }
 }
-
-
 
 /* >>>>>>>>>>>>Tablet portrait >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
@@ -313,7 +305,6 @@ footer {
     .Container {
         max-width: 720px;
     }
-
     /* Cabeçalho */
     header {
         max-width: 720px;
@@ -324,20 +315,19 @@ footer {
         height: 80px;
         margin: 10px 0px 0px 0px;
     }
-/* Menu */
+    /* Menu */
     label {
-    font-size: 4em;
-    top: 25px;
-    right: 5px;
-}
- 
+        font-size: 4em;
+        top: 25px;
+        right: 5px;
+    }
     nav ul {
         top: 100px;
         right: -50%;
         width: 50%;
     }
-     /* Destaque */
-     .Banner {
+    /* Destaque */
+    .Banner {
         display: block;
         position: absolute;
         bottom: 0;
@@ -350,7 +340,6 @@ footer {
         font-size: 1.75em;
         font-weight: 400;
     }
-
     #textoDestaque {
         font-size: 1em;
         font-weight: 500;
@@ -360,24 +349,20 @@ footer {
 
 /* >>>>>>>Tablet landscape >>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-
     /* Layout */
     .Container {
         max-width: 960px;
     }
-
     /* Cabeçalho */
     header {
         max-width: 992px;
-       
+
     }
-    
-    
-}
-#destaqueIntro{
-    display: none;
 }
 
+#destaqueIntro {
+    display: none;
+}
 #destaqueIntro img {
     margin-right: 50px;
     border-radius: 20px;
@@ -385,12 +370,10 @@ footer {
 #imagemYoutube {
     display: inline;
 }
-
 #imagemYoutube img {
     width: 256px;
     height: 256px;
 }
-
 /* >>>>>>>>PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
 
@@ -398,13 +381,11 @@ footer {
     .Container {
         max-width: 1140px;
     }
-
     /* Cabeçalho */
     header {
         max-width: 1140px;
         height: 125px;
     }
-
     #logo img {
         width: 424px;
         height: 97.4px;
@@ -413,7 +394,6 @@ footer {
     label {
         display: none;
     }
-
     nav ul {
         width: 100%;
         position: static;
@@ -421,12 +401,10 @@ footer {
         background-color: var(--brancoLayout);
         margin-top: 50px;
     }
-
     nav ul li {
         border: 0;
         float: left;
     }
-
     nav ul li a {
         color: var(--cinzaLayout);
         font-weight: 500;
@@ -439,7 +417,6 @@ footer {
         display: inline;
         color: var(--vermelho);
     }
-
     /* Destaque */
     #destaque {
         height: 75vh;
@@ -448,46 +425,35 @@ footer {
         font-size: 2em;
         font-weight: 400;
     }
-
     #textoDestaque {
         font-size: 1.1em;
     }
-
     #intro {
         background-attachment: fixed;
     }
     #textoYoutube h2 {
         font-size: 2.5em;
-     
- }
-
+    }
     #textoYoutube p {
         font-size: 1.25em;
         margin-bottom: 50px;
     }
-
     #destacado {
         font-size: 1.3em;
         font-weight: 750;
     }
-
 }
-
 #intro {
     background-attachment: fixed;
 }
+/*Banner*/
 
-            /*Banner*/
-
-main h1{
+main h1 {
     font-size: 3em;
 }
-main h2{
+main h2 {
     font-size: 1.5em;
-   
 }
-
-
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
@@ -496,7 +462,6 @@ main h2{
     header {
         height: 150px;
     }
-
     #logo img {
         width: 125px;
         height: 121.75px;
