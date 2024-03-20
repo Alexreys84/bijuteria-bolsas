@@ -4,7 +4,7 @@
 # bijuteria-bolsas
 Este repositório hospeda o projeto do site bijiteria-bolsas.com
 ## Acessar Site
-![QrCode]([https://github.com/Alexreys84/bijuteria-bolsas/blob/main/Doc/qrcode_chrome.png](https://github.com/Alexreys84/bijuteria-bolsas/blob/main/Doc/qrcode_alexreys84.github.io.png))
+![QrCode](https://github.com/Alexreys84/bijuteria-bolsas/blob/main/Doc/qrcode_alexreys84.github.io.png)
 # Autor
 Alex dos Reis
 # Links utilizados
