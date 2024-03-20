@@ -3,6 +3,8 @@
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Falexreys84.github.io%2Fbijuteria-bolsas%2F)
 # bijuteria-bolsas
 Este repositório hospeda o projeto do site bijiteria-bolsas.com
+## Acessar Site
+![QrCode](https://github.com/Alexreys84/bijuteria-bolsas/blob/main/Doc/qrcode_chrome.png)
 # Autor
 Alex dos Reis
 # Links utilizados
