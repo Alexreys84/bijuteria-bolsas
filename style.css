@@ -52,6 +52,12 @@ body {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
     display: flex;
+    flex-direction: column;
+}
+.Containersobre{
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+    display: flex;
     flex-direction: row;
 }
 
