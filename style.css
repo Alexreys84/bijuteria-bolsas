@@ -200,6 +200,22 @@ nav ul {
     transition: all 0.5s;
 }
 
+.FlexPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagemSobre{
+    
+    margin: 16px 0;
+
+}
+#textoSobre{
+    margin: 16px 0;
+
+}
+
 /* ativar o checkbox refernte a ul*/
 #check:checked~ul {
     right: 0;
