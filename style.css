@@ -54,7 +54,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-.Containersobre{
+
+.Containersobre {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
     display: flex;
@@ -276,7 +277,7 @@ footer {
 }
 
 #textoSobre h4 {
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: 400;
     font-size: 1em;
 }
@@ -285,20 +286,23 @@ footer {
 @media (min-width: 576px) {
 
     /* Layout */
- .Container {
+    .Container {
         max-width: 540px;
 
     }
+
     /* Cabeçalho */
     header {
         max-width: 540px;
         margin: 0 auto;
     }
+
     .Flex {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
+
     #social {
         margin: 0;
     }
@@ -311,27 +315,32 @@ footer {
     .Container {
         max-width: 720px;
     }
+
     /* Cabeçalho */
     header {
         max-width: 720px;
         height: 100px;
     }
+
     #logo img {
         width: 80px;
         height: 80px;
         margin: 10px 0px 0px 0px;
     }
+
     /* Menu */
     label {
         font-size: 4em;
         top: 25px;
         right: 5px;
     }
+
     nav ul {
         top: 100px;
         right: -50%;
         width: 50%;
     }
+
     /* Destaque */
     .Banner {
         display: block;
@@ -341,11 +350,13 @@ footer {
         width: 100%;
         color: var(--branco);
     }
+
     #slogan {
         font-family: "Orbitron", sans-serif;
         font-size: 1.75em;
         font-weight: 400;
     }
+
     #textoDestaque {
         font-size: 1em;
         font-weight: 500;
@@ -355,10 +366,12 @@ footer {
 
 /* >>>>>>>Tablet landscape >>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
+
     /* Layout */
     .Container {
         max-width: 960px;
     }
+
     /* Cabeçalho */
     header {
         max-width: 992px;
@@ -369,17 +382,21 @@ footer {
 #destaqueIntro {
     display: none;
 }
+
 #destaqueIntro img {
     margin-right: 50px;
     border-radius: 20px;
 }
+
 #imagemYoutube {
     display: inline;
 }
+
 #imagemYoutube img {
     width: 256px;
     height: 256px;
 }
+
 /* >>>>>>>>PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
 
@@ -387,19 +404,23 @@ footer {
     .Container {
         max-width: 1140px;
     }
+
     /* Cabeçalho */
     header {
         max-width: 1140px;
         height: 125px;
     }
+
     #logo img {
         width: 80px;
         height: 80px;
     }
+
     /*menu*/
     label {
         display: none;
     }
+
     nav ul {
         width: 100%;
         position: static;
@@ -407,14 +428,17 @@ footer {
         background-color: var(--brancoLayout);
         margin-top: 50px;
     }
+
     nav ul li {
         border: 0;
         float: left;
     }
+
     nav ul li a {
         color: var(--cinzaLayout);
         font-weight: 500;
     }
+
     /* Destacar link ativo do menu */
     #index span#s1,
     #sobre span#s2,
@@ -423,40 +447,58 @@ footer {
         display: inline;
         color: var(--vermelho);
     }
+
     /* Destaque */
     #destaque {
         height: 75vh;
     }
+
     #slogan {
         font-size: 2em;
         font-weight: 400;
     }
+
     #textoDestaque {
         font-size: 1.1em;
     }
+
     #intro {
         background-attachment: fixed;
     }
+
     #textoYoutube h2 {
         font-size: 2.5em;
     }
+
     #textoYoutube p {
         font-size: 1.25em;
         margin-bottom: 50px;
     }
+
     #destacado {
         font-size: 1.3em;
         font-weight: 750;
     }
+
+    /* tela sobre */
+    #textoSobre {
+        margin-left: 50px;
+    }
+
 }
+
+/* fim PC ou note <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 #intro {
     background-attachment: fixed;
 }
+
 /*Banner*/
 
 main h1 {
     font-size: 3em;
 }
+
 main h2 {
     font-size: 1.5em;
 }
@@ -468,6 +510,7 @@ main h2 {
     header {
         height: 150px;
     }
+
     #logo img {
         width: 125px;
         height: 121.75px;
