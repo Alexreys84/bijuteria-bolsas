@@ -245,10 +245,15 @@ footer {
     background-color: var(--bordaLayout);
     color: var(--brancoLayout);
     text-align: center;
+   
 }
 
 #social {
-    margin-bottom: 25px;
+    margin: 0px,0px,25px,0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
 #social img {
@@ -484,6 +489,7 @@ footer {
     #textoSobre {
         margin-left: 50px;
     }
+    
 
 }
 
