@@ -306,13 +306,13 @@ footer {
 /* >>>>>>>>>>>>>>Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
-    /* Layout */
+    /* >>>>>>>>>> Layout <<<<<<<<<<*/
     .Container {
         max-width: 540px;
 
     }
 
-    /* Cabeçalho */
+    /* >>>>>>>>> Cabeçalho <<<<<<<<<<<<*/
     header {
         max-width: 540px;
         margin: 0 auto;
@@ -332,12 +332,12 @@ footer {
 /* >>>>>>>>>>>>Tablet portrait >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
 
-    /* Layout */
+    /* >>>>>>>>>> Layout <<<<<<<<<<<*/
     .Container {
         max-width: 720px;
     }
 
-    /* Cabeçalho */
+    /* >>>>>>>>>>>>>>Cabeçalho <<<<<<<<<<<<<*/
     header {
         max-width: 720px;
         height: 100px;
@@ -349,7 +349,7 @@ footer {
         margin: 10px 0px 0px 0px;
     }
 
-    /* Menu */
+    /* >>>>>>>>>>>>>>> Menu <<<<<<<<<<<<<<<<<< */
     label {
         font-size: 4em;
         top: 25px;
@@ -362,7 +362,7 @@ footer {
         width: 50%;
     }
 
-    /* Destaque */
+    /* >>>>>>>>>>>>>>>>> Destaque <<<<<<<<<<<<<<*/
     .Banner {
         display: block;
         position: absolute;
@@ -385,10 +385,10 @@ footer {
     }
 }
 
-/* >>>>>>>Tablet landscape >>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>> Tablet landscape >>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
 
-    /* Layout */
+    /* >>>>>>>>>>>>>>>>> Layout <<<<<<<<<<<<<<<<<<<<<<*/
     .Container {
         max-width: 960px;
     }
@@ -421,12 +421,12 @@ footer {
 /* >>>>>>>>PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
 
-    /* Layout */
+    /* >>>>>>>>>>>>>>>>> Layout <<<<<<<<<<<<<<<*/
     .Container {
         max-width: 1140px;
     }
 
-    /* Cabeçalho */
+    /* >>>>>>>>>>>>>>>> Cabeçalho <<<<<<<<<<<<<<*/
     header {
         max-width: 1140px;
         height: 125px;
@@ -460,7 +460,7 @@ footer {
         font-weight: 500;
     }
 
-    /* Destacar link ativo do menu */
+    /* >>>>>>>>> Destacar link ativo do menu <<<<<<<<<<<<<<*/
     #index span#s1,
     #sobre span#s2,
     #projetos span#s3,
@@ -509,7 +509,7 @@ footer {
 
 }
 
-/* fim PC ou note <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>> fim PC ou note <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 #intro {
     background-attachment: fixed;
@@ -525,7 +525,7 @@ main h2 {
     font-size: 1.5em;
 }
 
-/* PCs, notebooks ou Tv Full HD + >>>> */
+/* >>>>>>>>>>>>>>>> PCs, notebooks ou Tv Full HD + <<<<<<<<<<<<<<<<<<<<< */
 @media (min-width: 1400px) {
 
     /* Cabeçalho */
