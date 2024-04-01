@@ -108,7 +108,7 @@ body {
 .Card {
     margin-top: 25px;
     width: 160px;
-    height: 372px;
+    height: 373px;
     background-color: var(--backgroundCard);
     border: 2px solid var(--bordaLayout);
     border-radius: 10px;
