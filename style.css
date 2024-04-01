@@ -3,7 +3,7 @@
  @author Alex Reis
  */
 
-/* google fonts */
+/* >>>>>>>>>>>>>>>>>>>> google fonts <<<<<<<<<<<<<<<<<<<<<<< */
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 
@@ -200,18 +200,19 @@ nav ul {
     transition: all 0.5s;
 }
 
-.FlexPage{
+.FlexPage {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#imagemSobre{
-    
+#imagemSobre {
+
     margin: 16px 0;
 
 }
-#textoSobre{
+
+#textoSobre {
     margin: 16px 0;
 
 }
@@ -235,7 +236,7 @@ nav ul li a {
 /*Banner*/
 main {
     background: url(img/background1.jpg);
-    height: 35vh;
+    height: 25vh;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -261,15 +262,15 @@ footer {
     background-color: var(--bordaLayout);
     color: var(--brancoLayout);
     text-align: center;
-   
+
 }
 
 #social {
-    margin: 0px,0px,25px,0px;
+    margin: 0px, 0px, 25px, 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+
 }
 
 #social img {
@@ -505,7 +506,7 @@ footer {
     #textoSobre {
         margin-left: 50px;
     }
-    
+
 
 }
 
