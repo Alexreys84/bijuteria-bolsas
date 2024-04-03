@@ -550,7 +550,10 @@ text-shadow: 0px 0px 1px rgba(0,0,0,0.7),
     h1{
         text-align: center;
         margin: 50px 0px 25px 0px;
-        
+            
+    }
+    h2{
+        text-align: center;
     }
     /*>>>>>>>>>>>>>>>>> Contatos <<<<<<<<<<<<<<<<< */
     *{
