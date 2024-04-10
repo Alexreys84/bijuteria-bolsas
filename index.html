@@ -1,690 +1,263 @@
-/**
- Folha de estilo do site Moda Feminina
- @author Alex Reis
- */
-
-/* google fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
-
-
-
-
-
-
-/* variáveis globais */
-:root {
-    --cinzaLayout: #3c3c3c;
-    --cinzaTexto: #000000;
-    --brancoLayout: #000000;
-    --backgroundCard: #ffd700;
-    --bordaLayout: #ffff;
-
-
-}
-
-/* CSS RESET */
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-/* >>>>>>>>>>>>>>> LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
-html {
-    scroll-behavior: smooth;
-}
-
-/*Estrutura do site*/
-body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1em;
-}
-
-.Container {
-    margin: 0 auto;
-    padding: 50px 15px 50px 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.Container2 {
-    margin: 0 auto;
-    padding: -30px 15px 50px 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.Containersobre {
-    margin: 0 auto;
-    padding: 50px 15px 50px 15px;
-    display: flex;
-    flex-direction: row;
-}
-
-.Flex,
-.FlexCard,
-.FlexMenu,
-.FlexSection {
-    display: flex;
-}
-
-.Flex {
-    flex-direction: column;
-}
-
-.FlexCard {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.FlexMenu {
-    justify-content: space-between;
-}
-
-.FlexSection {
-    align-items: center;
-}
-
-.Flex {
-    flex-direction: column;
-}
-
-.FlexCard {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.FlexMenu {
-    justify-content: space-between;
-}
-
-.FlexSection {
-    align-items: center;
-}
-
-/* cartão */
-.Card {
-    margin-top: 25px;
-    width: 160px;
-    height: 373px;
-    background-color: var(--backgroundCard);
-    border: 2px solid var(--bordaLayout);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.Card img {
-    border-radius: 10px 9px 0px 0px;
-}
-
-.Card h3 {
-    margin: 20px 30px 0px 30px;
-}
-
-.Card p {
-    padding: 10px 15px 50px 15px;
-    text-align: left;
-    color: var(--cinzaTexto);
-}
-
-.Button {
-    text-decoration: none;
-    background-color: var(--vermelhoLayout);
-    color: var(--brancoLayout);
-    padding: 10px 100px;
-    border-radius: 25px;
-    font-size: 1em;
-    font-weight: 500;
-}
-
-/* Topo do site*/
-#topo {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-}
-
-.Flex,
-.FlexMenu {
-    display: Flex;
-    justify-content: space-between;
-}
-
-.Flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* >>>>>>>>>>>Smartphone portrait >>>>>>>>>>>>>>>> */
-
-/* Cabeçalho */
-header {
-    height: 80px;
-}
-
-#logo img {
-    width: 64px;
-    height: 64.88px;
-    margin: 10px 0px 0px 10px;
-}
-
-#check {
-    display: none;
-}
-
-label {
-    font-size: 3em;
-    position: fixed;
-    top: 25px;
-    right: 3px;
-    color: rgba(60, 60, 60, 0.6);
-}
-
-nav ul {
-    list-style: none;
-    background-color: rgba(60, 60, 60, 0.95);
-    height: 100vh;
-    position: fixed;
-    top: 80px;
-    right: -70%;
-    /*estratégia para recolher o menu*/
-    width: 70%;
-    transition: all 0.5s;
-}
-
-.FlexPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#imagemSobre {
-
-    margin: 16px 0;
-
-}
-
-#textoSobre {
-    margin: 16px 0;
-
-}
-
-/* ativar o checkbox refernte a ul*/
-#check:checked~ul {
-    right: 0;
-}
-
-nav ul li {
-    border-bottom: 0.5px solid var(--backgroundCard);
-    text-align: right;
-    padding: 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--backgroundCard)
-}
-
-/*Banner*/
-main {
-    display: flex;
-
-    justify-content: center;
-    background: url(img/background1.jpg);
-    height: 35vh;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    
-}
-
-
-main h1 {
-    margin-top: 75px;
-    font-family: "orbitron", sans-serif;
-    font-size: 1.0em;
-    justify-content: center;
-    height: 100px;
-    color: #daa520;
-    font-size: 1.0em;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
-        0px 0px 13px rgba(0, 0, 0, 0.4),
-        0px 0px 23px rgba(0, 0, 0, 0.4);
-
-
-}
-
-main h2 {
-    margin-top: -40px;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    color: #daa520;
-    font-size: 1.0em;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
-        0px 0px 13px rgba(0, 0, 0, 0.4),
-        0px 0px 23px rgba(0, 0, 0, 0.4);
-
-
-}
-
-/* Rodapé */
-footer {
-    background-color: var(--bordaLayout);
-    color: var(--brancoLayout);
-    text-align: center;
-
-}
-
-#social {
-    margin: 0px, 0px, 20px, 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-#social img {
-    padding-left: 6px;
-}
-
-/*** Página sobre ***/
-#textoSobre p {
-    text-align: left;
-}
-
-#textoSobre h2 {
-    margin: 20px 0px;
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-#textoSobre h3 {
-    margin: 20px 0px;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-#textoSobre ol {
-    margin-left: 20px;
-}
-
-#textoSobre h4 {
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 1em;
-}
-
-@media (min-width: 0px) and (max-width: 575px) {
-    #mapa {
-        display: none;
-    }
-}
-
-
-/* >>>>>>>>>>>>>>Smartphone landscape >>>>>>>>>>>>>>> */
-@media (min-width: 576px) {
-
-
-    /* >>>>>>>>>> Layout <<<<<<<<<<*/
-    .Container {
-        max-width: 540px;
-
-    }
-
-    /* >>>>>>>>> Cabeçalho <<<<<<<<<<<<*/
-    header {
-        max-width: 540px;
-        margin: 0 auto;
-    }
-
-    .Flex {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #social {
-        margin: 0;
-    }
-
-    main {
-        background: url(img/background1.jpg);
-        height: 42vh;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        
-    }
-
-    main h1,
-    h2 {
-        color: #daa520;
-        font-size: 1.0em;
-        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
-            0px 0px 13px rgba(0, 0, 0, 0.4),
-            0px 0px 23px rgba(0, 0, 0, 0.4);
-    }
-}
-
-/* >>>>>>>>>>>>Tablet portrait >>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px) {
-
-    /* >>>>>>>>>> Layout <<<<<<<<<<<*/
-    .Container {
-        max-width: 720px;
-    }
-
-    /* >>>>>>>>>>>>>>Cabeçalho <<<<<<<<<<<<<*/
-    header {
-        max-width: 720px;
-        height: 100px;
-    }
-
-    #logo img {
-        width: 80px;
-        height: 80px;
-        margin: 10px 0px 0px 0px;
-    }
-
-    /* >>>>>>>>>>>>>>> Menu <<<<<<<<<<<<<<<<<< */
-    label {
-        font-size: 4em;
-        top: 25px;
-        right: 5px;
-    }
-
-    nav ul {
-        top: 100px;
-        right: -50%;
-        width: 50%;
-    }
-
-    /* >>>>>>>>>>>>>>>>> Destaque <<<<<<<<<<<<<<*/
-    .Banner {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        color: var(--branco);
-    }
-
-    #slogan {
-        font-family: "Orbitron", sans-serif;
-        font-size: 1.75em;
-        font-weight: 400;
-    }
-
-    #textoDestaque {
-        font-size: 1em;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-}
-
-/* >>>>>>>>>>>>> Tablet landscape >>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px) {
-
-    /* >>>>>>>>>>>>>>>>> Layout <<<<<<<<<<<<<<<<<<<<<<*/
-    .Container {
-        max-width: 960px;
-    }
-
-    /* Cabeçalho */
-    header {
-        max-width: 992px;
-
-    }
-}
-
-#destaqueIntro {
-    display: none;
-}
-
-#destaqueIntro img {
-    margin-right: 50px;
-    border-radius: 20px;
-}
-
-#imagemYoutube {
-    display: inline;
-}
-
-#imagemYoutube img {
-    width: 256px;
-    height: 256px;
-}
-
-/* >>>>>>>>PCs ou notebooks HD >>>>>>>>>>>>>>>> */
-@media (min-width: 1200px) {
-
-    /* >>>>>>>>>>>>>>>>> Layout <<<<<<<<<<<<<<<*/
-    .Container {
-        max-width: 1140px;
-    }
-
-    /* >>>>>>>>>>>>>>>> Cabeçalho <<<<<<<<<<<<<<*/
-    header {
-        max-width: 1140px;
-        height: 125px;
-    }
-
-    #logo img {
-        width: 80px;
-        height: 80px;
-    }
-
-    /*menu*/
-    label {
-        display: none;
-    }
-
-    nav ul {
-        width: 100%;
-        position: static;
-        height: auto;
-        background-color: var(--brancoLayout);
-        margin-top: 50px;
-    }
-
-    nav ul li {
-        border: 0;
-        float: left;
-    }
-
-    nav ul :hover{
-        color: #daa520;
-        transition: .5s ;
-    }
-
-    nav ul li a {
-        color: var(--cinzaLayout);
-        font-weight: 500;
-        transition: .5s;
-    }
-
-    /* >>>>>>>>> Destacar link ativo do menu <<<<<<<<<<<<<<*/
-    #index span#s1,
-    #sobre span#s2,
-    #projetos span#s3,
-    #apoio span#s4 {
-        display: inline;
-        color: var(--vermelho);
-    }
-
-}
-
-main {
-    background: url(img/background1.jpg);
-    height: 40vh;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-}
-
-main h1,
-h2 {
-    color: #daa520;
-    font-size: 2.0em;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
-        0px 0px 13px rgba(0, 0, 0, 0.4),
-        0px 0px 23px rgba(0, 0, 0, 0.4);
-}
-
-/* Destaque */
-#destaque {
-    height: 75vh;
-}
-
-#slogan {
-    font-size: 2em;
-    font-weight: 400;
-}
-
-#textoDestaque {
-    font-size: 1.1em;
-}
-
-#intro {
-    background-attachment: fixed;
-}
-
-#textoYoutube h2 {
-    font-size: 2.5em;
-}
-
-#textoYoutube p {
-    font-size: 1.25em;
-    margin-bottom: 50px;
-}
-
-#destacado {
-    font-size: 1.3em;
-    font-weight: 750;
-}
-
-/* tela sobre */
-#textoSobre {
-    margin-left: 50px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: #ffffff;
-}
-
-h1 {
-    text-align: center;
-    margin: 50px 0px 25px 0px;
-
-}
-
-h2 {
-    text-align: center;
-}
-
-/*>>>>>>>>>>>>>>>>> Contatos <<<<<<<<<<<<<<<<< */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: #ffffff;
-}
-
-h1 {
-    text-align: center;
-    margin: 50px 0px 25px 0px;
-
-}
-
-.teste-contato {
-    display: flex;
-    flex-direction: row;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.container4 {
-    width: 800px;
-    margin-top: 0px;
-}
-
-.container8 {
-    margin-left: 100px;
-    margin-top: 117px;
-}
-
-form {
-    background-color: #ffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    /*compatibilidade o tamanho das caixascom o box*/
-    margin-bottom: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    background-color: #0066ff;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-}
-
-input[type="reset"] {
-    background-color: #ff9100;
-}
-
-/* >>>>>>>>>>>>>>>>>>>>>>> fim PC ou note <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-#intro {
-    background-attachment: fixed;
-}
-
-/*Banner*/
-
-main h1 {
-    font-size: 3em;
-}
-
-main h2 {
-    font-size: 1.5em;
-}
-
-/* >>>>>>>>>>>>>>>> PCs, notebooks ou Tv Full HD + <<<<<<<<<<<<<<<<<<<<< */
-@media (min-width: 1400px) {
-
-    /* Cabeçalho */
-    header {
-        height: 150px;
-    }
-
-    #logo img {
-        width: 125px;
-        height: 121.75px;
-    }
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importante para SEO -->
+    <title>Bolsas e Acessorios Feminino.</title>
+    <!-- Link com a folha de estilo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importante para SEO -->
+    <meta name="description" content="Acessorio para deixar você Mais Linda!!!">
+    <link rel="icon" href="./img/logo.jpg">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="FlexMenu">
+            <div id="logo">
+                <img src="img/logo.jpg" alt="logo Bolsas e Acessorios Feminino">
+            </div>
+
+            <!-- Menu -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">&#x268c;</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li><a href="promocoes.html">Promoções</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="Container7">
+            <h1>Boutique Camif</h1>
+            <h2>✨Estilo Em Cada Detalhe✨</h2>
+        </div>
+    </main>
+    <!-- Projetos -->
+    <section id="projetos">
+        <div class="Container">
+            <!-- <h2><span id="destacado2">!!!!!</span> !!!!!!</h2> -->
+            <!-- Cards -->
+            <div class="FlexCard">
+                <div class="Card">
+                    <a href="img/carteira1.jpg" target="_blank"><img src="img/carteira.jpg" alt="Carteira"></a>
+                    <h3>Mini carteira</h3>
+                    <p> Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/bolsa1.jpg" target="_blank"><img src="img/bolsa.png" alt="Bolsa"></a>
+                    <h3>Bolsa Santa Lolla</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/brinco1.jpg" target="_blank"><img src="img/brinco2.png" alt="brinco2"></a>
+                    <h3>Brincos Folheados </h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/t60.jpg" target="_blank"><img src="img/bolsaT60.jpg" alt="Bolsa t60"></a>
+                    <h3>Mala/Mochila 4 bolsos</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/bolsacartera1.jpg" target="_blank"><img src="img/bolsaCarteira.jpg"
+                            alt="Bolsa/Carteira"></a>
+                    <h3>Kit Bolsa e Carteira</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/bolsasrosa.jpg" target="_blank"><img src="img/bolsas.jpg" alt="Bolsa sl"></a>
+                    <h3>Bosas SL Rosa</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/sl1.jpg" target="_blank"><img src="img/bolsasl.jpg" alt="SL"></a>
+                    <h3>Bolsa SL Branca</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/bolsaM1.jpg" target="_blank"><img src="img/bolsamarron.jpg" alt="bolsaM1"></a>
+                    <h3>Bolsa Colcci</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/cartePreta.jpg" target="_blank"><img src="img/carteiraP.jpg" alt="CarteiraPreta"></a>
+                    <h3>Carteira Preta</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/cartrerrosa.jpg" target="_blank"><img src="img/carteiraro.jpg" alt="Carteira rosa"></a>
+                    <h3>Carteira Rosa</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/bincoR.jpg" target="_blank"><img src="img/bincoR1.jpg" alt="Brincos"></a>
+                    <h3>Brincos Folheados</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/colar1.jpg" target="_blank"><img src="img/colar2.jpg" alt="colar"></a>
+                    <h3>Colar Folheados</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/pulseira.jpg" target="_blank"><img src="img/pulseira1.jpg" alt="colar"></a>
+                    <h3>Pulseira Folheados</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/correnteborbo.jpg" target="_blank"><img src="img/correnteborbo1.jpg" alt="colar"></a>
+                    <h3>Corrente Borboleta </h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/correnteCoracao.jpg" target="_blank"><img src="img/correnteCoracao1.jpg"
+                            alt="colar"></a>
+                    <h3>Corrente Coração</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/brincoQ.jpg" target="_blank"><img src="img/brincoQ1.jpg" alt="colar"></a>
+                    <h3>Brincos Quadrado</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/brincoperola.jpg" target="_blank"><img src="img/brincoperola1.jpg" alt="colar"></a>
+                    <h3>Brincos Perola</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+                </div>
+                <div class="Card">
+                    <a href="img/colar1.jpg" target="_blank"><img src="img/colar2.jpg" alt="colar"></a>
+                    <h3>Colar Folheados</h3>
+                    <p>Mais informações</p>
+                    <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                            alt="insta"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                        target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <!-- <img src="img/CliqueAqui.png" class="Button"> -->
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="Container Flex">
+            <div id="social">
+                <a href="https://www.instagram.com/boutique_camif/" target="_blank"><img src="img/instagran.png"
+                        alt="insta"></a>
+                <a href="https://api.whatsapp.com/send?phone=5511953468234&text=Ol%C3%A1%2C%20vim%20pelo%20Instagram/"
+                    target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                <!-- Pode ser feito o download de qualquer documento -->
+                <img src="./img/pdf.png" alt="pdf">
+                <hr>
+            </div>
+            <div id="copyright">
+                <p>©2024 - Bolsas e Acessórios Feminino</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- topo -->
+    <a href="#logo" id="topo"><img src="img/topo.png" alt="seta topo"></a>
+</body>
+
+</html>
