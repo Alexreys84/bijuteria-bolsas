@@ -64,7 +64,6 @@ body {
     flex-direction: row;
 }
 
-
 .Flex,
 .FlexCard,
 .FlexMenu,
@@ -232,6 +231,9 @@ nav ul li a {
 
 /*Banner*/
 main {
+    display: flex;
+
+    justify-content: center;
     background: url(img/background1.jpg);
     height: 35vh;
     background-size: cover;
@@ -239,23 +241,34 @@ main {
     text-align: center;
 }
 
-main h1,
-h2 {
-    color: #daa520;
-    font-size: 1.0em;
-    text-shadow: 0px 0px 1px rgba(0,0,0,0.7),
-0px 0px 13px rgba(0,0,0,0.4),
-0px 0px 23px rgba(0,0,0,0.4);
-}
 
 main h1 {
+    margin-top: 75px;
     font-family: "orbitron", sans-serif;
     font-size: 1.0em;
-    
+    justify-content: center;
+    height: 100px;
+    color: #daa520;
+    font-size: 1.0em;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
+        0px 0px 13px rgba(0, 0, 0, 0.4),
+        0px 0px 23px rgba(0, 0, 0, 0.4);
+
+
 }
 
 main h2 {
+    margin-top: -40px;
     display: block;
+    justify-content: center;
+    text-align: center;
+    color: #daa520;
+    font-size: 1.0em;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
+        0px 0px 13px rgba(0, 0, 0, 0.4),
+        0px 0px 23px rgba(0, 0, 0, 0.4);
+
+
 }
 
 /* Rodapé */
@@ -304,10 +317,11 @@ footer {
     font-weight: 400;
     font-size: 1em;
 }
-@media (min-width: 0px) and (max-width: 575px){
-#mapa{
-    display: none;
-}
+
+@media (min-width: 0px) and (max-width: 575px) {
+    #mapa {
+        display: none;
+    }
 }
 
 
@@ -336,6 +350,7 @@ footer {
     #social {
         margin: 0;
     }
+
     main {
         background: url(img/background1.jpg);
         height: 42vh;
@@ -343,14 +358,15 @@ footer {
         background-position: center;
         text-align: center;
     }
+
     main h1,
-h2 {
-    color: #daa520;
-    font-size: 1.0em;
-    text-shadow: 0px 0px 1px rgba(0,0,0,0.7),
-0px 0px 13px rgba(0,0,0,0.4),
-0px 0px 23px rgba(0,0,0,0.4);
-}
+    h2 {
+        color: #daa520;
+        font-size: 1.0em;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
+            0px 0px 13px rgba(0, 0, 0, 0.4),
+            0px 0px 23px rgba(0, 0, 0, 0.4);
+    }
 }
 
 /* >>>>>>>>>>>>Tablet portrait >>>>>>>>>>>>>>>>>>>> */
@@ -479,9 +495,15 @@ h2 {
         float: left;
     }
 
+    nav ul :hover{
+        color: #daa520;
+        transition: .5s ;
+    }
+
     nav ul li a {
         color: var(--cinzaLayout);
         font-weight: 500;
+        transition: .5s;
     }
 
     /* >>>>>>>>> Destacar link ativo do menu <<<<<<<<<<<<<<*/
@@ -492,8 +514,9 @@ h2 {
         display: inline;
         color: var(--vermelho);
     }
-    
+
 }
+
 main {
     background: url(img/background1.jpg);
     height: 40vh;
@@ -501,116 +524,130 @@ main {
     background-position: center;
     text-align: center;
 }
+
 main h1,
 h2 {
-color: #daa520;
-font-size: 2.0em;
-text-shadow: 0px 0px 1px rgba(0,0,0,0.7),
-0px 0px 13px rgba(0,0,0,0.4),
-0px 0px 23px rgba(0,0,0,0.4);
+    color: #daa520;
+    font-size: 2.0em;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7),
+        0px 0px 13px rgba(0, 0, 0, 0.4),
+        0px 0px 23px rgba(0, 0, 0, 0.4);
 }
 
-    /* Destaque */
-    #destaque {
-        height: 75vh;
-    }
+/* Destaque */
+#destaque {
+    height: 75vh;
+}
 
-    #slogan {
-        font-size: 2em;
-        font-weight: 400;
-    }
+#slogan {
+    font-size: 2em;
+    font-weight: 400;
+}
 
-    #textoDestaque {
-        font-size: 1.1em;
-    }
+#textoDestaque {
+    font-size: 1.1em;
+}
 
-    #intro {
-        background-attachment: fixed;
-    }
+#intro {
+    background-attachment: fixed;
+}
 
-    #textoYoutube h2 {
-        font-size: 2.5em;
-    }
+#textoYoutube h2 {
+    font-size: 2.5em;
+}
 
-    #textoYoutube p {
-        font-size: 1.25em;
-        margin-bottom: 50px;
-    }
+#textoYoutube p {
+    font-size: 1.25em;
+    margin-bottom: 50px;
+}
 
-    #destacado {
-        font-size: 1.3em;
-        font-weight: 750;
-    }
+#destacado {
+    font-size: 1.3em;
+    font-weight: 750;
+}
 
-    /* tela sobre */
-    #textoSobre {
-        margin-left: 50px;
-    }
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        font-family: sans-serif;
-        background-color: #ffffff;
-    }
-    h1{
-        text-align: center;
-        margin: 50px 0px 25px 0px;
-            
-    }
-    h2{
-        text-align: center;
-    }
-    /*>>>>>>>>>>>>>>>>> Contatos <<<<<<<<<<<<<<<<< */
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        font-family: sans-serif;
-        background-color: #ffffff;
-    }
-    h1{
-        text-align: center;
-        margin: 50px 0px 25px 0px;
-        
-    }
-    .container4{
-        display: flex;
-        flex-direction: column;
-        max-width: 400px;
-        margin: 0 auto;
-        margin-top: -500px;
-    }
-    form{
-        background-color: #ffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
-    
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea{
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box; /*compatibilidade o tamanho das caixascom o box*/
-        margin-bottom: 10px;
-        border: 1px solid #cccccc;
-        border-radius: 5px;
-    }
-    input[type="submit"],
-    input[type="reset"]{
-        background-color: #0066ff;
-        color: #ffffff;
-        padding: 10px 20px;
-        border: none;
-    }
-    input[type="reset"]{
-        background-color: #ff9100;
-    }      
-    
+/* tela sobre */
+#textoSobre {
+    margin-left: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0px 25px 0px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+/*>>>>>>>>>>>>>>>>> Contatos <<<<<<<<<<<<<<<<< */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0px 25px 0px;
+
+}
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -500px;
+}
+
+form {
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*compatibilidade o tamanho das caixascom o box*/
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0066ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+}
+
+input[type="reset"] {
+    background-color: #ff9100;
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>> fim PC ou note <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 #intro {
