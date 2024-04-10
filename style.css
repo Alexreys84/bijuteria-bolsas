@@ -304,9 +304,16 @@ footer {
     font-weight: 400;
     font-size: 1em;
 }
+@media (min-width: 0px) and (max-width: 575px){
+#mapa{
+    display: none;
+}
+}
+
 
 /* >>>>>>>>>>>>>>Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
+
 
     /* >>>>>>>>>> Layout <<<<<<<<<<*/
     .Container {
@@ -574,6 +581,7 @@ text-shadow: 0px 0px 1px rgba(0,0,0,0.7),
         flex-direction: column;
         max-width: 400px;
         margin: 0 auto;
+        margin-top: -500px;
     }
     form{
         background-color: #ffff;
@@ -601,12 +609,7 @@ text-shadow: 0px 0px 1px rgba(0,0,0,0.7),
     }
     input[type="reset"]{
         background-color: #ff9100;
-    }
-    
-    
-       
-    
-    
+    }      
     
 /* >>>>>>>>>>>>>>>>>>>>>>> fim PC ou note <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
