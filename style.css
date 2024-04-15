@@ -237,7 +237,7 @@ main {
     height: 32vh;
     background-size: cover;
     background-position: center;
-    text-align: center;    
+    text-align: center;
 }
 
 main h1 {
@@ -323,6 +323,14 @@ footer {
 /* >>>>>>>>>>>>>>Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
+    main {
+        background: url(img/background1.jpg);
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+
+    }
 
     /* >>>>>>>>>> Layout <<<<<<<<<<*/
     .Container {
@@ -346,322 +354,316 @@ footer {
         margin: 0;
     }
 
-    main {
-        background: url(img/background1.jpg);
-        height: 70vh;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        
+
+
+
+    /* >>>>>>>>>>>>Tablet portrait >>>>>>>>>>>>>>>>>>>> */
+    @media (min-width: 768px) {
+
+        /* >>>>>>>>>> Layout <<<<<<<<<<<*/
+        .Container {
+            max-width: 720px;
+        }
+
+        /* >>>>>>>>>>>>>>Cabeçalho <<<<<<<<<<<<<*/
+        header {
+            max-width: 720px;
+            height: 100px;
+        }
+
+        #logo img {
+            width: 80px;
+            height: 80px;
+            margin: 10px 0px 0px 0px;
+        }
+
+        /* >>>>>>>>>>>>>>> Menu <<<<<<<<<<<<<<<<<< */
+        label {
+            font-size: 4em;
+            top: 25px;
+            right: 5px;
+        }
+
+        nav ul {
+            top: 100px;
+            right: -50%;
+            width: 50%;
+        }
+
+        /* >>>>>>>>>>>>>>>>> Destaque <<<<<<<<<<<<<<*/
+        .Banner {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            color: var(--branco);
+        }
+
+        #slogan {
+            font-family: "Orbitron", sans-serif;
+            font-size: 1.75em;
+            font-weight: 400;
+        }
+
+        #textoDestaque {
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
     }
 
-    .container7 h1 h2{
-    
-     
-    
-}
+    /* >>>>>>>>>>>>> Tablet landscape >>>>>>>>>>>>>>>>>>> */
+    @media (min-width: 992px) {
 
-/* >>>>>>>>>>>>Tablet portrait >>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px) {
+        /* >>>>>>>>>>>>>>>>> Layout <<<<<<<<<<<<<<<<<<<<<<*/
+        .Container {
+            max-width: 960px;
+        }
 
-    /* >>>>>>>>>> Layout <<<<<<<<<<<*/
-    .Container {
-        max-width: 720px;
+        /* Cabeçalho */
+        header {
+            max-width: 992px;
+
+        }
     }
 
-    /* >>>>>>>>>>>>>>Cabeçalho <<<<<<<<<<<<<*/
-    header {
-        max-width: 720px;
-        height: 100px;
+    #destaqueIntro {
+        display: none;
     }
 
-    #logo img {
-        width: 80px;
-        height: 80px;
-        margin: 10px 0px 0px 0px;
+    #destaqueIntro img {
+        margin-right: 50px;
+        border-radius: 20px;
     }
 
-    /* >>>>>>>>>>>>>>> Menu <<<<<<<<<<<<<<<<<< */
-    label {
-        font-size: 4em;
-        top: 25px;
-        right: 5px;
+    #imagemYoutube {
+        display: inline;
     }
 
-    nav ul {
-        top: 100px;
-        right: -50%;
-        width: 50%;
+    #imagemYoutube img {
+        width: 256px;
+        height: 256px;
     }
 
-    /* >>>>>>>>>>>>>>>>> Destaque <<<<<<<<<<<<<<*/
-    .Banner {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        color: var(--branco);
+
+    /* >>>>>>>>PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+    @media (min-width: 1200px) {
+
+        /*Banner*/
+        main {
+            height: 45vh;
+        }
+
+        main h1 {
+            margin-top: 100px;
+            font-size: 3em;
+        }
+
+        main h2 {
+            font-size: 1.5em;
+        }
+
+        /* >>>>>>>>>>>>>>>>> Layout <<<<<<<<<<<<<<<*/
+        .Container {
+            max-width: 1140px;
+        }
+
+        /* >>>>>>>>>>>>>>>> Cabeçalho <<<<<<<<<<<<<<*/
+        header {
+            max-width: 1140px;
+            height: 125px;
+        }
+
+        #logo img {
+            width: 80px;
+            height: 80px;
+        }
+
+        /*menu*/
+        label {
+            display: none;
+        }
+
+        nav ul {
+            width: 100%;
+            position: static;
+            height: auto;
+            background-color: var(--brancoLayout);
+            margin-top: 50px;
+        }
+
+        nav ul li {
+            border: 0;
+            float: left;
+        }
+
+        nav ul :hover {
+            color: #daa520;
+            transition: .5s;
+        }
+
+        nav ul li a {
+            color: var(--cinzaLayout);
+            font-weight: 500;
+            transition: .5s;
+        }
+
+        /* >>>>>>>>> Destacar link ativo do menu <<<<<<<<<<<<<<*/
+        #index span#s1,
+        #sobre span#s2,
+        #projetos span#s3,
+        #apoio span#s4 {
+            display: inline;
+            color: var(--vermelho);
+        }
+
+    }
+
+
+
+
+    /* Destaque */
+    #destaque {
+        height: 75vh;
     }
 
     #slogan {
-        font-family: "Orbitron", sans-serif;
-        font-size: 1.75em;
+        font-size: 2em;
         font-weight: 400;
     }
 
     #textoDestaque {
-        font-size: 1em;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-}
-
-/* >>>>>>>>>>>>> Tablet landscape >>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px) {
-
-    /* >>>>>>>>>>>>>>>>> Layout <<<<<<<<<<<<<<<<<<<<<<*/
-    .Container {
-        max-width: 960px;
+        font-size: 1.1em;
     }
 
-    /* Cabeçalho */
-    header {
-        max-width: 992px;
-
-    }
-}
-
-#destaqueIntro {
-    display: none;
-}
-
-#destaqueIntro img {
-    margin-right: 50px;
-    border-radius: 20px;
-}
-
-#imagemYoutube {
-    display: inline;
-}
-
-#imagemYoutube img {
-    width: 256px;
-    height: 256px;
-}
-
-
-/* >>>>>>>>PCs ou notebooks HD >>>>>>>>>>>>>>>> */
-@media (min-width: 1200px) {
-
-    /* >>>>>>>>>>>>>>>>> Layout <<<<<<<<<<<<<<<*/
-    .Container {
-        max-width: 1140px;
+    #intro {
+        background-attachment: fixed;
     }
 
-    /* >>>>>>>>>>>>>>>> Cabeçalho <<<<<<<<<<<<<<*/
-    header {
-        max-width: 1140px;
-        height: 125px;
+    #textoYoutube h2 {
+        font-size: 2.5em;
     }
 
-    #logo img {
-        width: 80px;
-        height: 80px;
+    #textoYoutube p {
+        font-size: 1.25em;
+        margin-bottom: 50px;
     }
 
-    /*menu*/
-    label {
-        display: none;
+    #destacado {
+        font-size: 1.3em;
+        font-weight: 750;
     }
 
-    nav ul {
+    /* tela sobre */
+    #textoSobre {
+        margin-left: 50px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: #ffffff;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 50px 0px 25px 0px;
+
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    /*>>>>>>>>>>>>>>>>> Contatos <<<<<<<<<<<<<<<<< */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: #ffffff;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 50px 0px 25px 0px;
+
+    }
+
+    .teste-contato {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .container4 {
+        width: 800px;
+        margin-top: 0px;
+    }
+
+    .container8 {
+        margin-left: 100px;
+        margin-top: 117px;
+    }
+
+    form {
+        background-color: #ffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
         width: 100%;
-        position: static;
-        height: auto;
-        background-color: var(--brancoLayout);
-        margin-top: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+        /*compatibilidade o tamanho das caixascom o box*/
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
     }
 
-    nav ul li {
-        border: 0;
-        float: left;
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #0066ff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
     }
 
-    nav ul :hover{
-        color: #daa520;
-        transition: .5s ;
+    input[type="reset"] {
+        background-color: #ff9100;
     }
 
-    nav ul li a {
-        color: var(--cinzaLayout);
-        font-weight: 500;
-        transition: .5s;
+    /* >>>>>>>>>>>>>>>>>>>>>>> fim PC ou note <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+    #intro {
+        background-attachment: fixed;
     }
 
-    /* >>>>>>>>> Destacar link ativo do menu <<<<<<<<<<<<<<*/
-    #index span#s1,
-    #sobre span#s2,
-    #projetos span#s3,
-    #apoio span#s4 {
-        display: inline;
-        color: var(--vermelho);
+
+
+    /* >>>>>>>>>>>>>>>> PCs, notebooks ou Tv Full HD + <<<<<<<<<<<<<<<<<<<<< */
+    @media (min-width: 1400px) {
+
+        /* Cabeçalho */
+        header {
+            height: 150px;
+        }
+
+        #logo img {
+            width: 125px;
+            height: 121.75px;
+        }
     }
-
-}
-
-/*Banner*/
-
-main h1 {
-    font-size: 3em;
-}
-
-main h2 {
-    font-size: 1.5em;
-}
-
-
-/* Destaque */
-#destaque {
-    height: 75vh;
-}
-
-#slogan {
-    font-size: 2em;
-    font-weight: 400;
-}
-
-#textoDestaque {
-    font-size: 1.1em;
-}
-
-#intro {
-    background-attachment: fixed;
-}
-
-#textoYoutube h2 {
-    font-size: 2.5em;
-}
-
-#textoYoutube p {
-    font-size: 1.25em;
-    margin-bottom: 50px;
-}
-
-#destacado {
-    font-size: 1.3em;
-    font-weight: 750;
-}
-
-/* tela sobre */
-#textoSobre {
-    margin-left: 50px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: #ffffff;
-}
-
-h1 {
-    text-align: center;
-    margin: 50px 0px 25px 0px;
-
-}
-
-h2 {
-    text-align: center;
-}
-
-/*>>>>>>>>>>>>>>>>> Contatos <<<<<<<<<<<<<<<<< */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: #ffffff;
-}
-
-h1 {
-    text-align: center;
-    margin: 50px 0px 25px 0px;
-
-}
-
-.teste-contato {
-    display: flex;
-    flex-direction: row;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.container4 {
-    width: 800px;
-    margin-top: 0px;
-}
-
-.container8 {
-    margin-left: 100px;
-    margin-top: 117px;
-}
-
-form {
-    background-color: #ffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    /*compatibilidade o tamanho das caixascom o box*/
-    margin-bottom: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    background-color: #0066ff;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-}
-
-input[type="reset"] {
-    background-color: #ff9100;
-}
-
-/* >>>>>>>>>>>>>>>>>>>>>>> fim PC ou note <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-#intro {
-    background-attachment: fixed;
-}
-
-
-
-/* >>>>>>>>>>>>>>>> PCs, notebooks ou Tv Full HD + <<<<<<<<<<<<<<<<<<<<< */
-@media (min-width: 1400px) {
-
-    /* Cabeçalho */
-    header {
-        height: 150px;
-    }
-
-    #logo img {
-        width: 125px;
-        height: 121.75px;
-    }
-}
