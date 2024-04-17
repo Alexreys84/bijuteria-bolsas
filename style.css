@@ -312,11 +312,53 @@ footer {
     font-weight: 400;
     font-size: 1em;
 }
+.container4{
+    text-align: center;
+}
+.container8 {
+    margin-left: 100px;
+    margin-top: 117px;
+      
+   
+}
+
+form {
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*compatibilidade o tamanho das caixascom o box*/
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0066ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+}
+
+input[type="reset"] {
+    background-color: #ff9100;
+}
 
 @media (min-width: 0px) and (max-width: 575px) {
     #mapa {
         display: none;
     }
+    
 }
 
 
@@ -602,6 +644,8 @@ footer {
         flex-direction: row;
         max-width: 800px;
         margin: 0 auto;
+        
+        
     }
 
     .container4 {
@@ -619,6 +663,7 @@ footer {
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
 
     }
 
@@ -652,8 +697,6 @@ footer {
         background-attachment: fixed;
     }
 
-
-
     /* >>>>>>>>>>>>>>>> PCs, notebooks ou Tv Full HD + <<<<<<<<<<<<<<<<<<<<< */
     @media (min-width: 1400px) {
 
@@ -667,3 +710,4 @@ footer {
             height: 121.75px;
         }
     }
+}
