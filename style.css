@@ -233,7 +233,7 @@ nav ul li a {
 main {
     display: flex;
     justify-content: center;
-    background: url(img/background1.jpg);
+    background: url(img/banner.jpg);
     height: 32vh;
     background-size: cover;
     background-position: center;
@@ -313,22 +313,21 @@ footer {
     font-size: 1em;
 }
 
-.container4{
+.container4 {
     text-align: center;
 }
-.container8 {
-    margin-left: 100px;
-    margin-top: 117px;
-      
-   
+
+.container8 h3 {
+    display: none;
 }
+
 
 form {
     background-color: #ffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 input[type="text"],
@@ -359,7 +358,7 @@ input[type="reset"] {
     #mapa {
         display: none;
     }
-    
+
 }
 
 
@@ -367,7 +366,7 @@ input[type="reset"] {
 @media (min-width: 576px) {
 
     main {
-        background: url(img/background1.jpg);
+        background: url(img/banner.jpg);
         height: 70vh;
         background-size: cover;
         background-position: center;
@@ -495,7 +494,7 @@ input[type="reset"] {
 
         /*Banner*/
         main {
-            height: 45vh;
+            height: 80vh;
         }
 
         main h1 {
@@ -645,8 +644,8 @@ input[type="reset"] {
         flex-direction: row;
         max-width: 800px;
         margin: 0 auto;
-        
-        
+
+
     }
 
     .container4 {
@@ -664,8 +663,22 @@ input[type="reset"] {
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        
 
+
+    }
+
+    .container8 {
+        font-weight: 400;
+        font-size: 1em;
+        margin-left: 100px;
+        text-align: center;
+    }
+
+    .container8 h3 {
+        font-size: 1.7em;
+        font-weight: 750;
+        margin-top: -59px;
+        margin-bottom: 25px;
     }
 
     input[type="text"],
